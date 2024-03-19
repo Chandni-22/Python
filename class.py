@@ -2,6 +2,7 @@
 
 class student:
 #student is a class.
+    # __init__ works as initial.
     def __init__(self, name, last, age, phone):
         self.name=name
         self.last=last
@@ -19,7 +20,7 @@ class student:
         a=f"{self.name} s full name is {self.name} {self.last} and her age is {str(self.age)}."
         return a
     
- #student_1 is an instance of class student.   
+#student_1 is an instance of class student.   
 student_1=student("Chandni", "Vishwakarma", 20, 9873193222)
 
 print(student_1.fullName())
@@ -33,3 +34,10 @@ print(student_1.__dict__)
 print(help(student))
 
 # The super() function is used to give access to methods and properties of a parent or sibling class.
+
+'''The isinstance() function will tell us if an Object is an instance of a class.'''
+# isinstance(object, type)
+
+'''The issubclass() function will tell us if a subclass of another.'''
+# issubclass(object,subclass)
+
