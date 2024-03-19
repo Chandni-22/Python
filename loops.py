@@ -162,3 +162,21 @@
 #             tmax=x
 #     i+=1
 # print(tmax)
+
+# c=1
+# i=-2
+# sum1=0
+# sum2=0
+# while c<=5:
+#     if c<=3:
+#         sum1+=i**2
+#         print(i,end=',')
+#     else:
+#         sum2+=i**2
+#         print(i,end=',')
+#     c+=1
+#     i+=1
+# if sum1==sum2:
+#     print("Yes")
+# else:
+#     print("No")
