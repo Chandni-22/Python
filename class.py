@@ -27,4 +27,9 @@ print(student.back4(student_1))
 print(student_1.deffi()) 
 
 #__dict__ will return the dictionary contains the information of instance.
-print(student_1.__dict__)  
+print(student_1.__dict__)
+
+# Gives the info.
+print(help(student))
+
+# The super() function is used to give access to methods and properties of a parent or sibling class.
