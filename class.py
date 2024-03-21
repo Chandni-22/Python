@@ -41,3 +41,14 @@ print(help(student))
 '''The issubclass() function will tell us if a subclass of another.'''
 # issubclass(object,subclass)
 
+'''__repr__ method returns a string that represents the object in a way that it can be recreated.'''
+#  def __repr__(self):
+
+'''__str__ method returns the user readable string form of an object that can be understood by the end users.'''
+# def __str__(self):
+
+'''__add__ method is called when the addition operator ( + ) is used with instances of your custom class.'''
+# __add__
+# print(int.__add__(1,2))
+# print(str.__add__("A","B"))
+
