@@ -138,7 +138,6 @@ Overtime amount = (overtime * (salary / 50))'''
 
 
 '''Q-2.) Write a Python class Restaurant with attributes like menu_items, book_table, and customer_orders, and methods like add_item_to_menu, book_tables, and customer_order.
-
 Perform the following tasks now:
   1) Now add items to the menu.
   2) Make table reservations.
@@ -199,7 +198,7 @@ Note: Use dictionaries and lists to store the data.'''
 # restaurant.book_table(1,"Chandni")
 # print()
 
-'''Taking customer orders.'''
+'''Taking customer's orders.'''
 # restaurant.customer_order("Sangeeta",["Chai","Dosa"])
 # restaurant.customer_order("Bhawna",["Samosa","Dosa"])
 # restaurant.customer_order("Chandni",["Samosa","Biryani"])
@@ -212,3 +211,108 @@ Note: Use dictionaries and lists to store the data.'''
 # restaurant.print_table_reservations()
 # print()
 # restaurant.print_customer_orders()
+
+
+'''Q-3.) Write a Python class BankAccount with attributes like account_number, balance, date_of_opening and customer_name, and methods like deposit, withdraw, and check_balance.'''
+
+# class BankAccount:
+#     def __init__(self,account_number,balance,date_of_opening,customer_name):
+#         self.account_number=account_number
+#         self.balance=balance
+#         self.date_of_opening=date_of_opening
+#         self.customer_name=customer_name
+
+#     def account_details(self):
+#         print("Account details of user:")
+#         print(f"Account Holder:{self.customer_name}")
+#         print(f"Account Number:{self.account_number}")
+#         print(f"Date Of Opening:{self.date_of_opening}")
+#         print(f"Account Balance:{self.balance}")
+
+#     def deposit(self,amount):
+#         if amount>0:
+#             self.balance+=amount
+#             print(f"Deposite of ₹{amount} successful.")
+#         else:
+#             print("Enter valid amount.")  
+
+#     def withdraw(self,amount):
+#         if amount>0:
+#             if (amount<=self.balance):
+#                 self.balance-=amount
+#                 print(f"Withdrawal of ₹{amount} successful.")
+#             else:
+#                 print("Insufficient balance")
+#         else:
+#             print("Enter valid amount.")
+
+#     def check_balance(self):
+#         print(f"Account Balance for {self.customer_name} (Account Number:{self.account_number}) is ₹{self.balance}.")
+
+# account1 = BankAccount(200012343297986,12000,"30-03-2023","Bhawna")
+
+# account1.account_details()
+# print()
+
+# account1.deposit(5000)
+# account1.check_balance()
+# print()
+
+# account1.withdraw(200)
+# account1.check_balance()
+
+
+'''Q-4.) Write a Python class Inventory with attributes like item_id, item_name, stock_count, and price, and methods like add_item, update_item, and check_item_details.
+   Note: Use a dictionary to store the item details, where the key is the item_id and the value is a dictionary containing the item_name, stock_count, and price.'''
+
+# class Inventory:
+#     def __init__(self):
+#       self.items={}
+
+#     def add_item(self,item_id,item_name,stock_count,price):
+#       if item_id not in self.items:
+#         self.items[item_id]={'Item Name':item_name,'Stock Count':stock_count,'Price':price}
+#         print("Item added successfully.")
+#       else:
+#         print("Item ID already exists, modify existing item to add again.")
+        
+#     def update_item(self,item_id=None,item_name=None,stock_count=None,price=None):
+#       if item_id in self.items:
+#         item_details=self.items[item_id]
+#         if item_name:
+#             item_details['Item Name']=item_name
+#         if stock_count is not None:
+#             item_details['Stock Count']=stock_count
+#         if price is not None:
+#             item_details['Price']=price
+#         else:
+#           print("Item details updated successfully.")
+#       else:
+#         print("Item ID does not exist. Use add_item() to add a new item.")   
+
+#     def check_item_details(self, item_id):
+#       if item_id in self.items:
+#         print(f"Item ID:{item_id}")
+#         print(f"Item Name:{self.items[item_id]['Item Name']}")
+#         print(f"Stock Count:{self.items[item_id]['Stock Count']}")
+#         print(f"Price:{self.items[item_id]['Price']}")
+#       else:
+#         print("Item ID does not exist.")
+
+# inventory = Inventory()
+
+# inventory.add_item('201','Notebook',1000,20)
+# inventory.add_item('300','Pen',5000, 10)
+
+# print("Item details before update:")
+# inventory.check_item_details('300')
+
+# inventory.update_item('201',stock_count=200, price=30)
+# print()
+
+# print("Item details after update:")
+# inventory.check_item_details('300')
+# print()
+
+# print("Item details for non-existing item:")
+# inventory.check_item_details('103')         
