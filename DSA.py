@@ -82,6 +82,38 @@
 #         print(List)    
 
 # List=[9,7,6,2,1,4,5,8,3]
-# mergeSort(List)
 # print(f"Sorted list:{mergeSort(List)}")
 
+'''5. Quick Sort: Quick Sort picks a pivot, moves all elements smaller than the pivot to its left, and all elements larger than the pivot to its right. It repeats this process for each partition until the entire array is sorted.'''
+# def quickSort(list,left,right):
+#     if left<right:
+#         pi=partition(list,left,right)
+
+#         quickSort(list,left,(pi-1))
+#         quickSort(list,(pi+1),right)   
+
+# def partition(list,left,right):
+#     i=left
+#     j=right-1
+#     pivot=list[right]
+#     print(f"Pivot:{pivot}")
+
+#     while i<j:
+#         while (i<right) and (list[i]<pivot):
+#             i+=1
+#             print(f"i:{i}, list[i]:{list[i]}")
+#         while (j>left) and (list[j]>=pivot):
+#             j-=1
+#             print(f"j:{j}, list:{list[j]}")
+#         if i<j:
+#             list[i],list[j]=list[j],list[i] 
+#             print(list) 
+
+#     if list[i]>pivot:
+#         list[i],list[right]=list[right],list[i]
+#         print(list)   
+#     return (i)   
+
+# List=[9,7,6,2,1,4,5,8,3]
+# quickSort(List,0,(len(List)-1))
+# print(f"Sorted list:{List}")
