@@ -1,5 +1,61 @@
-'''String Methods'''
-''
+'''String Methods: All string methods return new values. They do not change the original string.'''
+
+'1.) Capitalize: Converts the first character to upper case.'
+# name="chandni vishwakarma"
+# print(name.capitalize())
+
+'2.) Title: Converts the first character of each word to upper case.'
+# name="chandni vishwakarma"
+# print(name.title())
+
+'3.) Upper: Converts a string into upper case.'
+# name="chandni vishwakarma"
+# print(name.upper())
+
+'4.) Lower: Converts a string into lower case.'
+# name="CHANDNI VISHWAKARMA"
+# print(name.lower())
+
+'5.) Find: Searches the string for a specified value and returns the lowest position of where it was found and Return -1 on failure..'
+# name="chandni vishwakarma"
+# print(name.find("p"))
+
+'6.) Count: Returns the number of times a specified value occurs in a string.'
+# name="chandni vishwakarma"
+# print(name.count("a"))
+
+'7.) Index: Searches the string for a specified value and returns the position of where it was found and Raises ValueError when the substring is not found.'
+# name="chandni vishwakarma"
+# print(name.index("s"))
+
+'8.) Replace: Returns a string where a specified value is replaced with a specified value.'
+# name="chandni vishwakarma"
+# print(name.replace("a","#"))
+
+'9.) Split: Splits the string at the specified separator, and returns a list.'
+# name="chandni vishwakarma"
+# print(name.split("a"))
+
+'10.) islower: 	Returns True if all characters in the string are lower case.'
+# name="chandni vishwakarma"
+# print(name.isupper())
+
+'11.) isupper: Returns True if all characters in the string are upper case.'
+# name="chandni vishwakarma"
+# print(name.islower())
+
+'12.) isnumeric: Returns True if all characters in the string are numeric.'
+# name="chandni vishwakarma"
+# print(name.isnumeric())
+
+'13.) isalpha: Returns True if all characters in the string are in the alphabet.'
+# name="chandnivishwakarma"
+# print(name.isalpha())
+
+'''The format() method formats the specified value(s) and insert them inside the string's placeholder.'''
+# print("Hey, my name is {} and my age is {}.".format((input()),(int(input()))))
+# print(f"Hey, my name is {input()} and my age is {int(input())}.")
+
 
 '''Q-1.) Find the length of a String.'''
 
