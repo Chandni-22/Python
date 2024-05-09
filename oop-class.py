@@ -324,7 +324,7 @@ Note: Use dictionaries and lists to store the data.'''
                      4.)Delete from cart
                      5.)Update quantity in cart
                      6.)Price for every item
-                     7.)If total bill is more then or equal to Rs. 500, give 5% discount on total bill
+                     7.)If total bill is more then or equal to Rs. 1000, give 5% discount on total bill
                      8.)Minimum order Rs 100
                      9.)Wishlist'''
 
@@ -380,7 +380,7 @@ Note: Use dictionaries and lists to store the data.'''
 
 #       if total_bill<100:
 #          print("Minimum order amount not met.")
-#       elif total_bill>=500:
+#       elif total_bill>=1000:
 #          total_bill=(5/100)*total_bill
 #          print(f"Total bill:{total_bill}")
 #       else:
@@ -402,43 +402,45 @@ Note: Use dictionaries and lists to store the data.'''
 
 # ZoomBoomWebsite=Website()
 
-'''Add products.'''
+# '''Add products.'''
 # ZoomBoomWebsite.add_product("Cap",60,7)
 # ZoomBoomWebsite.add_product("T-shirt",1500,100)
 # ZoomBoomWebsite.add_product("Shoes",2000,50)
-# ZoomBoomWebsite.add_product("Jins",1000,100)
+# ZoomBoomWebsite.add_product("Jeans",1000,100)
 # ZoomBoomWebsite.add_product("Makeup",2000,1)
 # ZoomBoomWebsite.add_product("Headphones",1000,1)
 # ZoomBoomWebsite.add_product("Pen",20,1000)
 # ZoomBoomWebsite.add_product("Notebook",100,100)
 
-'''Printing products.'''
+# '''Printing products.'''
 # ZoomBoomWebsite.print_product()
 
-'''Add products to the cart.'''
-# ZoomBoomWebsite.add_to_cart("Jins",2)
+# '''Add products to the cart.'''
+# ZoomBoomWebsite.add_to_cart("Jeans",2)
 # ZoomBoomWebsite.add_to_cart("Headphones",1)
 # ZoomBoomWebsite.add_to_cart("Cap",1)
 # ZoomBoomWebsite.add_to_cart("Notebook",5)
 # print()
 
-'''Remove from the cart.'''
-# ZoomBoomWebsite.remove_from_cart("Jins")
+# '''Remove from the cart.'''
+# ZoomBoomWebsite.remove_from_cart("Jeans")
 # print()
 
-'''Update quantity in the cart.'''
+# '''Update quantity in the cart.'''
 # ZoomBoomWebsite.update_quantity("Notebook",3)
 # print()
 
-'''Calculate the total bill.'''
+# '''Calculate the total bill.'''
 # ZoomBoomWebsite.calculate_bill()
 # print()
 
-'''Add products to wishlist.'''
+# '''Add products to wishlist.'''
 # ZoomBoomWebsite.add_to_wishlist("Makeup")
 # ZoomBoomWebsite.add_to_wishlist("Shoes")
 # ZoomBoomWebsite.add_to_wishlist("Cap")
 # print()
 
-'''Remove from wishlist.'''
+# '''Remove from wishlist.'''
 # ZoomBoomWebsite.remove_from_wishlist("Cap")
+
+# ZoomBoomWebsite.add_product("❤️",0,1)
