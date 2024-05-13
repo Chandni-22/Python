@@ -381,7 +381,8 @@ Note: Use dictionaries and lists to store the data.'''
 #       if total_bill<100:
 #          print("Minimum order amount not met.")
 #       elif total_bill>=1000:
-#          total_bill=(5/100)*total_bill
+#          print(total_bill)
+#          total_bill=total_bill-((5/100)*total_bill)
 #          print(f"Total bill:{total_bill}")
 #       else:
 #          print(f"Total bill:{total_bill}") 
