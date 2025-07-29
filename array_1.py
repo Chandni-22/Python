@@ -1,4 +1,4 @@
-import numpy as num
+import numpy as num # type: ignore
 # array1=num.array([2,4,5,6,7,7])
 # print(f"1D={array1[2]}")
 # array2=num.array([[2,3,4,5,6,],[6,5,5,6,66,]])

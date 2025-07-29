@@ -6,7 +6,7 @@
 # 4.  Dictionary
 # 5.  Tuple
 # 6.  Oops
-# 7.  Linked list(sinkly and doubly)
+# 7.  Linked list(singly and doubly)
 # 8.  Stack
 # 9.  Recursion
 # 10. Tree.binary tree
